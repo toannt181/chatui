@@ -42,8 +42,8 @@ a:active {
   display: flex;
 
   .left {
-    width: 20%;
-    min-width: 200px;
+    width: 25%;
+    min-width: 300px;
     background-color: $light-grey;
     @import "leftbar";
   }
