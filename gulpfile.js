@@ -10,8 +10,24 @@ var gulp = require('gulp'),
 /* pathConfig*/
 var browserDir = './dist',
     sassWatchPath = './src/css/**/*.scss',
+    jsWatchPath = './src/**/*.js',
+    ejsWatchPath = './src/views/**/*.ejs',
     htmlWatchPath = './dist/**/*.html';
 /**/
+
+var ejs = require('gulp-ejs');
+
+
+gulp.task('ejs', function(){
+    return gulp.src('./src/views/index.ejs')
+        .pipe(ejs({}, {}, {ext:'.html'}))
+        .pipe(gulp.dest('dist/'))
+});
+
+
+gulp.task('js', function () {
+
+});
 
 gulp.task('browser-sync', function () {
     browserSync.init({
@@ -34,8 +50,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
+    gulp.watch(jsWatchPath, ['js']);
+    gulp.watch(ejsWatchPath, ['ejs']).on('change', browserSync.reload);
     gulp.watch(sassWatchPath, ['sass']).on('change', browserSync.reload);
-    gulp.watch(htmlWatchPath).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['sass', 'watch', 'browser-sync']);
+gulp.task('default', ['ejs', 'sass', 'watch', 'browser-sync']);
