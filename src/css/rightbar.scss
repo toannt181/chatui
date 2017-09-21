@@ -1,0 +1,55 @@
+.customer, .customer-full-info, .note, .take-note {
+  border: 1px solid rgba(0, 0, 0, .10);
+  padding: 15px;
+}
+
+.take-note {
+  padding: 15px;
+}
+
+.customer {
+
+  div {
+    img, p {
+      vertical-align: middle;
+    }
+
+  }
+
+  vertical-align: text-top;
+
+  img:first-child {
+    width: 100%;
+  }
+
+  p:first-child {
+    margin-bottom: 0;
+  }
+
+  p:nth-child(2) {
+    font-size: 0.7em;
+    opacity: 0.8;
+  }
+}
+
+.customer-full-info {
+  font-size: 0.9em;
+  i{
+    font-size:0.9em;
+  }
+  li{
+    font-size: 0.9em;
+  }
+}
+
+.note{
+  height: auto;
+  overflow-y: auto;
+  //overflow-y: scroll;
+}
+
+.take-note{
+  position: fixed;
+  height: 70px;
+  bottom: 0;
+}
