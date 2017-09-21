@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2bd0c74-b388-4419-8a1b-1bbba02ef61e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/about-sample2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/about-sample3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/avatar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/bot-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chart-chucvu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chart-dotuoi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chart-hocvan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chart-sosanh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chart-thanhpho.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chart-vitri.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chisocamxuc-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/chudephobien-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/coca.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/duongthaoluan-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/fb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/google.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/login-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/logo-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/nghiencuuthitruong-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/nghiencuuthitruong.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/phantichdulieu-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/phantichdulieu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/thiphankenh-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/thiphanthaoluan-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tilecamxuc-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tilecamxuc1-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tintuc-bg-sample.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tintuc-sample.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tongquan-chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/top-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/topbg-trangchungtoi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tuvanquantri-big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/tuvanquantri.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/img/twiter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/iphone-toggle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/responsive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="608">
               <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,6 +95,7 @@
         <option value="$PROJECT_DIR$/src/css/helper.scss" />
         <option value="$PROJECT_DIR$/src/css/home.scss" />
         <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -230,12 +199,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505966754752</updated>
-      <workItem from="1505966756783" duration="2516000" />
+      <workItem from="1505966756783" duration="2565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2516000" />
+    <option name="totallyTimeSpent" value="2565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -291,14 +260,6 @@
     <entry file="file://$PROJECT_DIR$/dist/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7903">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -364,6 +325,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
