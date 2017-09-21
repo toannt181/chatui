@@ -1,4 +1,4 @@
-.customer, .customer-full-info, .note, .take-note {
+.customer, .customer-full-info, .notes-list {
   border: 1px solid rgba(0, 0, 0, .10);
   padding: 15px;
 }
@@ -42,14 +42,24 @@
   }
 }
 
-.note{
-  height: auto;
+.notes-list{
+
+  .note-item{
+    height: 50px;
+    margin-bottom: 25px;
+    transition: width 2s;
+  }
+
+  .note-item:hover{
+    background-color: #fff;
+  }
+  height: 300px;
   overflow-y: auto;
+  flex-grow: 1;
   //overflow-y: scroll;
 }
 
 .take-note{
-  position: fixed;
   height: 70px;
   bottom: 0;
 }
