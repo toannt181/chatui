@@ -1,0 +1,21 @@
+.room-item{
+    border-bottom: #000000 solid 1px;
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.room-available{
+    display: flex;
+    margin: 5px 10px 0px 10px;
+}
+.customer-info{
+    text-align: left;
+    margin-left: 10px;
+}
+.customer-name{
+    color: #000;
+
+    text-transform: capitalize;
+}
