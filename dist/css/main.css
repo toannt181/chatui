@@ -295,35 +295,66 @@ a:active {
   display: -ms-flexbox;
   display: flex; }
   .container-chat .left {
-    width: 20%;
-    min-width: 200px; }
+    width: 25%;
+    min-width: 300px;
+    background-color: #e0e0e0; }
+    .container-chat .left .text-header {
+      background-color: #00b6c9; }
+    .container-chat .left #chat {
+      height: 60%;
+      overflow: auto; }
+    .container-chat .left #unchat {
+      height: 40%;
+      overflow: auto; }
     .container-chat .left .room-item {
-      border-bottom: #000000 solid 1px; }
+      padding: 5px 0px;
+      margin-bottom: 5px;
+      background-color: #f7f7f7; }
     .container-chat .left .avatar {
       width: 60px;
       height: 60px;
       border-radius: 50%; }
     .container-chat .left .room-available {
-      display: -ms-flexbox;
-      display: flex;
-      margin: 5px 10px 0px 10px; }
+      margin: 0px 10px; }
+    .container-chat .left .new-message {
+      font-weight: bold; }
+    .container-chat .left .room-enable {
+      margin: 0px 10px; }
     .container-chat .left .customer-info {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
       text-align: left;
       margin-left: 10px; }
+    .container-chat .left .control {
+      margin-left: auto;
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+      font-size: 12px; }
     .container-chat .left .customer-name {
       text-transform: capitalize;
       color: black; }
     .container-chat .left .customer-last-massage {
       color: #888;
-      font-size: 14px; }
+      font-size: 14px;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
     .container-chat .left .room-info {
+      display: -ms-flexbox;
+      display: flex;
       font-size: 16px;
-      margin: 0px 0px 2px 10px; }
+      margin: 5px 0px 2px 10px; }
     .container-chat .left .room-type, .container-chat .left .room-src, .container-chat .left .room-status {
       border: solid #28384b 1px;
       border-radius: 10px;
-      margin-left: 5px;
-      text-align: center; }
+      text-align: center;
+      background: #10a0ff;
+      color: white;
+      border: transparent;
+      padding: 4px 8px;
+      margin-right: 8px;
+      font-size: 12px; }
   .container-chat .middle {
     -ms-flex-positive: 1;
         flex-grow: 1;

@@ -50,9 +50,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(jsWatchPath, ['js']);
-    gulp.watch(ejsWatchPath, ['ejs']).on('change', browserSync.reload);
     gulp.watch(sassWatchPath, ['sass']).on('change', browserSync.reload);
+    gulp.watch(ejsWatchPath, ['ejs']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['ejs', 'sass', 'watch', 'browser-sync']);
