@@ -1,13 +1,20 @@
+
+.text-header {
+  background-color: #00b6c9;
+}
+
 #chat {
   height: 60%;
+  overflow:auto
 }
 
 #unchat {
   height: 40%;
+  overflow: auto;
 }
 
 .room-item {
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0px;
   margin-bottom: 5px;
   background-color: #f7f7f7;
 }
@@ -19,15 +26,25 @@
 }
 
 .room-available {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px;
 }
-
+.new-message{
+  font-weight: bold;
+}
+.room-enable {
+  margin: 0px 10px;
+}
 .customer-info {
   align-self: center;
   text-align: left;
   margin-left: 10px;
 }
 
+.control {
+  margin-left: auto;
+  align-self: center;
+  font-size: 12px;
+}
 .customer-name {
   text-transform: capitalize;
   color: black;
@@ -36,12 +53,13 @@
 .customer-last-massage {
   color: $dark-grey;
   font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .room-info {
   display: flex;
   font-size: 16px;
-
   margin: 5px 0px 2px 10px;
 }
 
