@@ -4,12 +4,22 @@
 var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync');
 
 /* pathConfig*/
 var browserDir = './dist',
-    sassWatchPath = './src/css/**/*.scss';
+    sassWatchPath = './src/css/**/*.scss',
+    htmlWatchPath = './dist/**/*.html';
 /**/
+
+gulp.task('browser-sync', function () {
+    browserSync.init({
+        server: {
+            baseDir: browserDir
+        }
+    });
+});
 
 gulp.task('sass', function () {
     return gulp.src('src/css/main.scss')
@@ -20,12 +30,12 @@ gulp.task('sass', function () {
         }))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/css'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('watch', function () {
-    gulp.watch(sassWatchPath, ['sass']).on('change', function () {
-        console.log('css change');
-    });
+    gulp.watch(sassWatchPath, ['sass']).on('change', browserSync.reload);
+    gulp.watch(htmlWatchPath).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'watch', 'browser-sync']);
