@@ -1,36 +1,35 @@
 .nav-tabs {
-  margin: 8px;
-
-
+  display: flex;
   .nav-item {
-    background: white;
-    padding: 4px;
     width: 50%;
-    border-right: 1px solid $light-grey;
+    margin-bottom: 0;
+    border: transparent;
+
     &:first-child {
-      border-radius: 10px 0 0 10px;
+      border-right: 1px solid $light-grey;
     }
-    &:last-child {
-      border-radius: 0 10px 10px 0;
-      border-right: none;
-    }
+    //&:last-child {
+    //  border-radius: 0 10px 10px 0;
+    //  border-right: none;
+    //}
 
     a.nav-link {
-      background: transparent;
+      background: #78a3cc;
+      padding: 12px 8px;
+
       border: none;
-      color: black;
       text-align: center;
-      font-size: 14px;
-      border-radius: 0;
+      font-size: 16px;
+      border-radius:0;
+      color: #ddd;
 
       span.badge {
-        margin-left: 4px;
-        font-size: 12px;
+        margin-left: 8px;
+        font-size: 14px;
       }
 
       &.active {
-        font-weight: bold;
-        color: $orange;
+        color: white;
       }
     }
   }
@@ -38,19 +37,20 @@
 
 .search-bar {
   margin: 8px;
-  margin-top: 0;
 
   .input-group {
-    background-color: #f7f7f7;
+    background-color: $light-violet;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
     border-radius: 10px;
+    color: white;
   }
   .input-group input {
-    background-color: #f7f7f7;
+    background-color: $light-violet;
     border: none;
+    color: white;
     border-radius: 10px;
   }
 }
@@ -113,6 +113,7 @@
 
         .new-message {
           font-weight: bold;
+          color: rgba(215, 0, 37, 0.75);
         }
 
       }

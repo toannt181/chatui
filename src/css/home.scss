@@ -32,43 +32,57 @@ a:active {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 16px;
+  color: white;
+  font-size: 20px;
+  background-image: linear-gradient(to right top, #859cd2, #7aa3da, #6caae1, #5cb1e6, #48b8ea);
+}
+
 .container-chat {
   position: fixed;
-  top: 0;
+  top: 60px;
   right: 0;
   left: 0;
   bottom: 0;
-  background: #fafafa;
+  background: #f1f4f8;
   display: flex;
 
   .left {
     width: 25%;
     min-width: 300px;
-    background-color: $light-grey;
+    background-color: white;
     @import "leftbar";
     display: flex;
     flex-direction: column;
+    margin: 16px;
+    margin-right: 0;
   }
 
   .middle {
     flex-grow: 1;
     position: relative;
-    background: $white-milk;
+    background: white;
+    margin: 16px;
+    border-radius: 4px;
 
     .header {
       position: absolute;
-      height: 80px;
+      height: 100px;
       top: 0;
       left: 0;
       right: 0;
-      color: white;
+      color: #555;
       align-items: center;
-      padding: 8px;
+      padding: 16px;
       font-weight: bold;
-
-      background-image: linear-gradient(to right top, #1ac8b1, #00c4b9, #00c0c0, #00bbc5, #00b6c9);
-      @include box-shadow_down(2px);
-
+      background-color: white;
+      //background-image: linear-gradient(to right top, #859cd0, #819ecf, #7da0cf, #7aa1cd, #78a3cc);
+      //background-image: linear-gradient(to right top, #1ac8b1, #00c4b9, #00c0c0, #00bbc5, #00b6c9);
+      border-bottom: 1px solid $light-grey;
       .group-button {
         display: flex;
         justify-content: flex-end;
@@ -80,7 +94,7 @@ a:active {
 
     .body {
       position: absolute;
-      top: 80px;
+      top: 100px;
       left: 0;
       right: 0;
       bottom: 50px;
@@ -98,7 +112,7 @@ a:active {
 
         &.other {
           .chat {
-            background: $green;
+            background: $dark-blue;
             color: white;
           }
         }
@@ -154,6 +168,9 @@ a:active {
     width: 25%;
     min-width: 300px;
     display: flex;
+    margin: 16px;
+    margin-left: 0;
+    background: white;
     flex-direction: column;
     @import "rightbar";
   }
