@@ -16,20 +16,23 @@
 }
 
 // SEARCH BAR
-#chat .search-bar {
-  margin: 8px;
+.search-bar {
+  margin: 8px 8px 0px 8px;
 }
 
-#chat .input-group > span{
-   border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+.input-group {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 10px;
 }
-#chat .input-group > input{
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+.input-group input{
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 10px;
 }
-
-
 
 //=================================================
 .text-header {
@@ -38,7 +41,7 @@
 
 #chat {
   height: 60%;
-  overflow: auto
+  overflow: auto;
 }
 
 #unchat {
@@ -72,16 +75,18 @@
 }
 
 .customer-info {
-  align-self: center;
+  align-self: flex-start;
   text-align: left;
+  margin-top: 5px;
   margin-left: 10px;
 }
 
 .timer {
   margin-left: auto;
-  align-self: center;
+  align-self: flex-start;
   font-size: 12px;
-  margin-right: 5px;
+  margin-right:5px;
+  margin-top: 10px;
 }
 
 .customer-name {
@@ -93,13 +98,15 @@
   color: $dark-grey;
   font-size: 14px;
   white-space: nowrap;
+  width: 12em;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .room-info {
   display: flex;
   font-size: 16px;
-  margin: 5px 0px 2px 10px;
+  margin: 5px 0px 2px 0px;
 }
 
 .room-tag {
