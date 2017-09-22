@@ -1,23 +1,44 @@
-#leftbar li{
+#leftbar li {
   width: 50%;
   text-align: center;
+
 }
-#leftbar li a{
+
+#leftbar li a {
   color: black;
   font-size: 14px;
 }
-#leftbar >li >a.active{
+
+#leftbar > li > a.active {
   font-weight: bold;
   font-size: 16px;
   color: darkblue;
 }
+
+// SEARCH BAR
+#chat .search-bar {
+  margin: 8px;
+}
+
+#chat .input-group > span{
+   border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#chat .input-group > input{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+
+//=================================================
 .text-header {
   background-color: #00b6c9;
 }
 
 #chat {
   height: 60%;
-  overflow:auto
+  overflow: auto
 }
 
 #unchat {
@@ -27,8 +48,9 @@
 
 .room-item {
   padding: 5px 0px;
-  margin-bottom: 5px;
+  margin: 8px;
   background-color: #f7f7f7;
+  border-radius: 5px;
 }
 
 .avatar {
@@ -38,25 +60,30 @@
 }
 
 .room-available {
-  margin: 0px 10px;
+  margin: 5px 10px 0 10px;
 }
-.new-message{
+
+.new-message {
   font-weight: bold;
 }
+
 .room-enable {
   margin: 0px 10px;
 }
+
 .customer-info {
   align-self: center;
   text-align: left;
   margin-left: 10px;
 }
 
-.control {
+.timer {
   margin-left: auto;
   align-self: center;
   font-size: 12px;
+  margin-right: 5px;
 }
+
 .customer-name {
   text-transform: capitalize;
   color: black;
@@ -75,7 +102,7 @@
   margin: 5px 0px 2px 10px;
 }
 
-.room-type, .room-src, .room-status {
+.room-tag {
   border: solid $dark-blue 1px;
   border-radius: 10px;
   text-align: center;
@@ -84,6 +111,14 @@
   border: transparent;
   padding: 4px 8px;
   margin-right: 8px;
-  font-size: 12px;
+  font-size: 14px;
 }
-
+.room-tag-icon{
+  border: solid $dark-blue 1px;
+  border-radius: 10px;
+  text-align: center;
+  border: transparent;
+  padding: 4px 8px;
+  margin-right: 8px;
+  font-size: 14px;
+}
