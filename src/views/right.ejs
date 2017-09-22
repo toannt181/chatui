@@ -1,40 +1,35 @@
-<div class="customer">
+<div class="customer" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 
     <div class="row">
         <div class="col-md-3">
             <img class="rounded-circle " src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/18425485_1933912026878351_9010406805815045701_n.jpg?oh=cd8be5e0f924cf630950ef5fe4d745b3&oe=5A5DD4AC">
 
         </div>
-        <div class="col-md-6 customer-short-info">
+        <div class="col-md-9 customer-short-info">
             <p>Nguyễn Đức Thuần</p>
             <p>01664 375 871</p>
-        </div>
-        <div class="col-md-3">
-            <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                <span><i class="fa fa-chevron-circle-down"></i></span>
-            </a>
         </div>
 
     </div>
 
 </div>
 
-<div class="customer-full-info" id="collapseExample">
+<div class="customer-full-info collapse" id="collapseExample">
 
     <div>
-        <p><i>Họ tên: </i><b>Nguyễn Đức Thuần</b></p>
+        <p><i class="fa fa-user" aria-hidden="true"></i><strong>Nguyễn Đức Thuần</strong></p>
     </div>
     <div>
-        <p><i>SĐT: </i><b>01664 375 871</b></p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i><strong>01664 375 871</strong></p>
     </div>
     <div>
-        <p><i>Địa chỉ: </i><b>Đại học Công Nghệ - ĐHQGHN</b></p>
+        <p><i class="fa fa-home" aria-hidden="true"></i><strong>Đại học Công Nghệ - ĐHQGHN</strong></p>
     </div>
     <div>
-        <p><i>Nhắn từ: </i><a href="https://facebook.com">Facebook</a></p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://facebook.com">Facebook</a></p>
     </div>
     <div>
-        <p><i>Lịch sử chat: </i></p>
+        <p><i class="fa fa-history" aria-hidden="true"></i><strong>Lịch sử chat</strong></p>
         <ol>
             <li><a href="#">Room 1 - Đã đóng</a></li>
             <li><a href="#">Room 2 - Đang hoạt động</a></li>
@@ -43,26 +38,20 @@
 </div>
 
 <div class="notes-list">
-    <ol>
-        <li class="note-item">
-            <p>This is the first note of this room</p>
-        </li>
-        <li class="note-item">
-            <p>This is the first note of this room</p>
-        </li>
-        <li class="note-item">
-            <p>This is the first note of this room</p>
-        </li>
-        <li class="note-item">
-            <p>This is the first note of this room</p>
-        </li>
-        <li class="note-item">
-            <p>This is the first note of this room</p>
-        </li>
-        <li class="note-item">
-            <p>This is the first note of this room</p>
-        </li>
-    </ol>
+    <div class="px-md py-sm note-item border-right-0">
+        <div class="note-item-content d-flex">
+            <div class="pr-sm ps-type-ellipsis">This is the first note of this roome2134e21321321r32444444444444444444444452345235</div>
+            <div class="note-item-timestamp">15:23</div>
+            <div class="note-item-edit-label d-flex ps-color-orange">
+                <div class="note-item-delete-link d-flex align-items-center px-md">
+                    <a class="delete-note-link pl-tiny">delete /</a>
+                </div>
+                <div class="note-item-edit-link d-flex align-items-center">
+                    <a class="edit-note-link pl-tiny"> edit</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 

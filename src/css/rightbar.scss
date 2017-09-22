@@ -32,34 +32,92 @@
   }
 }
 
+.customer:hover{
+  cursor: pointer;
+}
+
 .customer-full-info {
   font-size: 0.9em;
-  i{
-    font-size:0.9em;
-  }
-  li{
+
+  i {
     font-size: 0.9em;
+  }
+  strong{
+    padding-left: 0.5em;
+  }
+  a{
+    padding-left: 0.5em;
   }
 }
 
 .notes-list{
+  background-color: #363636;
 
-  .note-item{
-    height: 50px;
-    margin-bottom: 25px;
-    transition: width 2s;
-  }
-
-  .note-item:hover{
-    background-color: #fff;
-  }
-  height: 300px;
   overflow-y: auto;
   flex-grow: 1;
-  //overflow-y: scroll;
+  overflow-x: hidden;
+
+  .note-item{
+
+    transition: background-color .2s;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    border: 1px solid #fff;
+    padding: 5px;
+    line-height: 2.0em;
+
+    .note-item-content {
+      font-size: .95rem;
+      color: #fff;
+      justify-content: space-around;
+      .ps-type-ellipsis {
+        //white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .pr-sm {
+        padding-right: .75rem !important;
+      }
+      .note-item-timestamp{
+
+      }
+    }
+
+    .note-item-edit-label {
+      min-width: 8rem;
+      margin-right: -9.3rem;
+      transition: margin-right 0.3s;
+      transition-property: margin-right;
+      transition-duration: 0.3s;
+      transition-timing-function: initial;
+      transition-delay: initial;
+      a:hover{
+        text-decoration: underline;
+      }
+      .align-items-center{
+        align-items: center;
+      }
+    }
+
+  }
+
+  .note-item:hover {
+    background-color: #000000;
+    cursor: pointer;
+    .note-item-edit-label{
+      margin-right: 0;
+    }
+  }
+
+
+
+
+
 }
 
 .take-note{
-  height: 70px;
+  height: 150px;
   bottom: 0;
 }
