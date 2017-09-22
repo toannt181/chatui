@@ -46,6 +46,8 @@ a:active {
     min-width: 300px;
     background-color: $light-grey;
     @import "leftbar";
+    display: flex;
+    flex-direction: column;
   }
 
   .middle {
