@@ -37,15 +37,17 @@
 }
 
 .customer-full-info {
-  font-size: 0.9em;
+  font-size: 0.8em;
 
   i {
     font-size: 0.9em;
   }
-  strong{
+  strong, a{
     padding-left: 0.5em;
   }
-  a{
+
+  li a{
+    font-size: 0.8em;
     padding-left: 0.5em;
   }
 }
@@ -68,7 +70,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, .10);
 
     padding: 5px;
-    line-height: 2.0em;
+    line-height: 1.5em;
 
     .note-item-content {
       font-size: .95rem;
@@ -111,6 +113,8 @@
 
   .ps-color-border-gray-02 {
     border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
   }
 
   .px-tiny {
@@ -121,6 +125,7 @@
   .mx-tiny {
     margin-right: .25rem !important;
     margin-left: .25rem !important;
+    margin-top: .25em;
   }
 
   .btn-toggle {
