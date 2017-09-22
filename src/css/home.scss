@@ -57,12 +57,11 @@ a:active {
 
     .header {
       position: absolute;
-      height: 60px;
+      height: 80px;
       top: 0;
       left: 0;
       right: 0;
       color: white;
-      display: flex;
       align-items: center;
       padding: 8px;
       font-weight: bold;
@@ -70,11 +69,18 @@ a:active {
       background-image: linear-gradient(to right top, #1ac8b1, #00c4b9, #00c0c0, #00bbc5, #00b6c9);
       @include box-shadow_down(2px);
 
+      .group-button {
+        display: flex;
+        justify-content: flex-end;
+        .button {
+          text-transform: uppercase !important;
+        }
+      }
     }
 
     .body {
       position: absolute;
-      top: 60px;
+      top: 80px;
       left: 0;
       right: 0;
       bottom: 50px;
@@ -87,16 +93,21 @@ a:active {
           padding: 16px 16px;
           border-radius: 4px;
           margin: 0 8px 16px 8px;
+          width: 80%;
         }
 
         &.other {
-
+          .chat {
+            background: $green;
+            color: white;
+          }
         }
 
         &.self {
           justify-content: flex-end;
         }
       }
+
     }
 
     .bottom {
@@ -118,6 +129,22 @@ a:active {
         }
       }
 
+      .group-button {
+        a.button {
+          background: $blue;
+          color: white;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 100%;
+
+          &.send {
+            padding-right: 2px;
+          }
+        }
+      }
 
     }
 
