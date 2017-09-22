@@ -1,131 +1,143 @@
-#leftbar li {
-  width: 50%;
-  text-align: center;
-
-}
-
-#leftbar li a {
-  color: black;
-  font-size: 14px;
-}
-
-#leftbar > li > a.active {
-  font-weight: bold;
-  font-size: 16px;
-  color: darkblue;
-}
-
-// SEARCH BAR
-.search-bar {
-  margin: 8px 8px 0px 8px;
-}
-
-.input-group {
-  background-color: #f7f7f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 10px;
-  border-radius: 10px;
-}
-.input-group input{
-  background-color: #f7f7f7;
-  border: none;
-  border-radius: 10px;
-}
-
-//=================================================
-.text-header {
-  background-color: #00b6c9;
-}
-
-#chat {
-  height: 60%;
-  overflow: auto;
-}
-
-#unchat {
-  height: 40%;
-  overflow: auto;
-}
-
-.room-item {
-  padding: 5px 0px;
+.nav-tabs {
   margin: 8px;
-  background-color: #f7f7f7;
-  border-radius: 5px;
+
+  .nav-item {
+    background: white;
+    padding: 4px;
+    width: 50%;
+    border-right: 1px solid $light-grey;
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+      border-right: none;
+    }
+
+    a.nav-link {
+      background: transparent;
+      border: none;
+      color: black;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 0;
+
+      span.badge {
+        margin-left: 4px;
+        font-size: 12px;
+      }
+
+      &.active {
+        font-weight: bold;
+        color: $orange;
+      }
+    }
+  }
 }
 
-.avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.search-bar {
+  margin: 8px;
+  margin-top: 0;
+
+  .input-group {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+  .input-group input {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 10px;
+  }
 }
 
-.room-available {
-  margin: 5px 10px 0 10px;
-}
+.tab-content {
+  overflow: auto;
+  flex-grow: 1;
+  .tab-pane {
+    .room-item {
+      padding: 12px 8px;
+      margin: 0 8px 8px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      display: flex;
 
-.new-message {
-  font-weight: bold;
-}
+      .customer-control {
+        .avatar {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
 
-.room-enable {
-  margin: 0px 10px;
-}
+        .room-info {
+          display: flex;
+          font-size: 16px;
+          margin: 5px 0px 2px 0px;
+        }
+      }
 
-.customer-info {
-  align-self: flex-start;
-  text-align: left;
-  margin-top: 5px;
-  margin-left: 10px;
-}
+      .customer-info {
+        align-self: flex-start;
+        text-align: left;
+        margin-left: 16px;
+        flex-grow: 1;
 
-.timer {
-  margin-left: auto;
-  align-self: flex-start;
-  font-size: 12px;
-  margin-right:5px;
-  margin-top: 10px;
-}
+        .title {
+          display: flex;
+          align-items: center;
 
-.customer-name {
-  text-transform: capitalize;
-  color: black;
-}
+          .name {
+            text-transform: capitalize;
+            color: black;
+            justify-content: space-between;
+          }
 
-.customer-last-massage {
-  color: $dark-grey;
-  font-size: 14px;
-  white-space: nowrap;
-  width: 12em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+          .timer {
+            font-size: 12px;
+            margin-left: auto;
+          }
+        }
 
-.room-info {
-  display: flex;
-  font-size: 16px;
-  margin: 5px 0px 2px 0px;
-}
+        .last-massage {
+          color: $dark-grey;
+          font-size: 14px;
+          white-space: nowrap;
+          width: 12em;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
 
-.room-tag {
-  border: solid $dark-blue 1px;
-  border-radius: 10px;
-  text-align: center;
-  background: $light-blue;
-  color: white;
-  border: transparent;
-  padding: 4px 8px;
-  margin-right: 8px;
-  font-size: 14px;
-}
-.room-tag-icon{
-  border: solid $dark-blue 1px;
-  border-radius: 10px;
-  text-align: center;
-  border: transparent;
-  padding: 4px 8px;
-  margin-right: 8px;
-  font-size: 14px;
+        .new-message {
+          font-weight: bold;
+        }
+
+      }
+
+      .room-tag {
+        border: solid $dark-blue 1px;
+        border-radius: 10px;
+        text-align: center;
+        background: $light-blue;
+        color: white;
+        border: transparent;
+        padding: 4px 8px;
+        margin-right: 8px;
+        font-size: 14px;
+      }
+
+      .room-tag-icon {
+        border: solid $dark-blue 1px;
+        border-radius: 10px;
+        text-align: center;
+        border: transparent;
+        padding: 4px 8px;
+        margin-right: 8px;
+        font-size: 14px;
+      }
+    }
+
+  }
 }
