@@ -1,4 +1,16 @@
-
+#leftbar li{
+  width: 50%;
+  text-align: center;
+}
+#leftbar li a{
+  color: black;
+  font-size: 14px;
+}
+#leftbar >li >a.active{
+  font-weight: bold;
+  font-size: 16px;
+  color: darkblue;
+}
 .text-header {
   background-color: #00b6c9;
 }
