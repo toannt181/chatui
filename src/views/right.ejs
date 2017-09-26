@@ -1,11 +1,11 @@
 <div class="customer" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
             <img class="rounded-circle " src="https://i1.wp.com/fimo.edu.vn/wp-content/uploads/2017/02/UET-logo-txt.png">
 
         </div>
-        <div class="col-md-9 customer-short-info">
+        <div class="col-md-10 customer-short-info">
             <p>Nguyễn Đức Thuần</p>
             <p>01664 375 871</p>
         </div>
@@ -41,11 +41,20 @@
 
     <div class="px-md py-sm note-item">
         <div class="note-item-content d-flex">
-            <div class="pr-sm ps-type-ellipsis">This is the first note of this roome2134e21321321r32444444444444444444444452345235</div>
+            <div class="pr-sm ps-type-ellipsis" contenteditable="true">
+                This is the first note of this roome2134e21321321r32444444444444444444444452345235
+            </div>
             <div class="note-item-timestamp d-flex">
                 15:23
                 <div class="note-item-edit-label">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
+
+                </div>
+                <div class="dropdown">
+                    <i class="fa fa-cog" aria-hidden="true" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Sửa</a>
+                        <a class="dropdown-item" href="#">Xóa</a>
+                    </div>
                 </div>
             </div>
 
@@ -67,7 +76,8 @@
 
     <div class="px-md py-sm note-item">
         <div class="note-item-content d-flex">
-            <div class="pr-sm ps-type-ellipsis">This is the first note of this roome2134e21321321r32444444444444444444444452345235</div>
+            <div class="pr-sm ps-type-ellipsis">
+                This is the first note of this roome2134e21321321r32444444444444444444444452345235</div>
             <div class="note-item-timestamp d-flex">
                 15:23
                 <div class="note-item-edit-label">
@@ -121,7 +131,7 @@
 
 <div class="take-note d-flex">
     <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Add a note..."></textarea>
-    <div class="d-flex">
+    <div class="d-flex press-enter">
         Press
         <span class="ps-color-border-gray-02 px-tiny mx-tiny">enter</span>
         to save
