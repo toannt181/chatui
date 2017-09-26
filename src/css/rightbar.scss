@@ -114,8 +114,9 @@
   }
 
   .px-tiny {
-    padding-right: .25rem !important;
-    padding-left: .25rem !important;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
   }
 
   .mx-tiny {

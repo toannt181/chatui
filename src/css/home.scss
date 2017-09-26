@@ -83,13 +83,43 @@ header {
       //background-image: linear-gradient(to right top, #859cd0, #819ecf, #7da0cf, #7aa1cd, #78a3cc);
       //background-image: linear-gradient(to right top, #1ac8b1, #00c4b9, #00c0c0, #00bbc5, #00b6c9);
       border-bottom: 1px solid $light-grey;
-      .group-button {
+
+      .title {
         display: flex;
-        justify-content: flex-end;
-        .button {
-          text-transform: uppercase !important;
+        justify-content: space-between;
+
+        .group-button {
+          display: flex;
+          justify-content: flex-end;
+          button {
+            text-transform: uppercase !important;
+            margin-left: 4px;
+          }
         }
       }
+
+      .list-tag {
+        .tag {
+          border: none;
+          border-radius: 20px;
+          background-color: $light-grey;
+          padding: 2px 16px;
+          color: #555;
+
+          &.red {
+            background-color: $pink;
+            color: white;
+          }
+
+          &:first-child {
+            background-color: $primary;
+            color: white;
+          }
+
+          @include button-effect-white(#555);
+        }
+      }
+
     }
 
     .body {
@@ -107,18 +137,21 @@ header {
           padding: 16px 16px;
           border-radius: 4px;
           margin: 0 8px 16px 8px;
-          width: 80%;
+          max-width: 80%;
         }
 
         &.other {
           .chat {
-            background: $dark-blue;
+            background: $pink;
             color: white;
           }
         }
 
         &.self {
           justify-content: flex-end;
+          .chat {
+            background-color: $super-light-violet;
+          }
         }
       }
 
@@ -145,10 +178,11 @@ header {
 
       .group-button {
         a.button {
-          background: $blue;
-          color: white;
+          //background: $blue;
+          color: $primary;
           width: 32px;
           height: 32px;
+          font-size: 24px;
           display: flex;
           align-items: center;
           justify-content: center;
