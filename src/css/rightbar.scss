@@ -1,7 +1,8 @@
-.customer, .customer-full-info, .notes-list {
+.customer, .customer-full-info {
   border: 1px solid rgba(0, 0, 0, .10);
   padding: 15px;
 }
+
 
 .take-note {
   padding: 15px;
@@ -37,20 +38,24 @@
 }
 
 .customer-full-info {
-  font-size: 0.9em;
+  font-size: 0.8em;
 
   i {
     font-size: 0.9em;
   }
-  strong{
+  strong, a{
     padding-left: 0.5em;
   }
-  a{
+
+  li a{
+    font-size: 0.8em;
     padding-left: 0.5em;
   }
 }
 
 .notes-list{
+  border: 1px solid rgba(0, 0, 0, .10);
+
   background-color: #F6F6F6;
 
   overflow-y: auto;
@@ -58,7 +63,6 @@
   overflow-x: hidden;
 
   .note-item{
-
     transition: background-color .2s;
     transition-property: background-color;
     transition-duration: 0.2s;
@@ -67,8 +71,8 @@
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, .10);
 
-    padding: 5px;
-    line-height: 2.0em;
+    padding: 15px;
+    line-height: 1.5em;
 
     .note-item-content {
       font-size: .95rem;
@@ -105,12 +109,20 @@
 .take-note{
   font-size: 0.8em;
   flex-flow: column;
-  align-items: flex-end;
+  align-items: center;
   height: 150px;
   bottom: 0;
 
+  .press-enter{
+    margin-top: 5px;
+    padding-top: 3px;
+    align-items: center;
+  }
+
   .ps-color-border-gray-02 {
     border: 1px solid #aaa;
+    display: flex;
+    align-items: center;
   }
 
   .px-tiny {
@@ -122,10 +134,11 @@
   .mx-tiny {
     margin-right: .25rem !important;
     margin-left: .25rem !important;
+    margin-top: .25em;
   }
 
   .btn-toggle {
-    margin: 0 4rem;
+    margin-left: 5px;
     padding: 0;
     position: relative;
     border: none;
